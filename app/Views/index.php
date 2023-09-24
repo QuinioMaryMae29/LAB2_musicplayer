@@ -65,7 +65,6 @@
         <div class="modal-body">
           <br>
               <a href="/createPlaylist">Your playlist</a>
-              <br>
         </div>
         <div class="modal-footer">
           <a href="#" data-bs-dismiss="modal">Close</a>
@@ -79,28 +78,11 @@
     <button type="submit" class="btn btn-info">Search</button>
   </form>
   <div id="search-results">
-     <?php if(!empty($results)): ?>
-      <ul>
-        <?php foreach ($results as $result): ?>
-          <li>
-            <?= $result->title; ?> by <?= $result->artist; ?>
-          </li>
-        <?php endforeach; ?>
-      </ul>
-      <?php else: ?>
-        <p>No results found. </p>
-      <?php endif; ?>
   </div>
     <h1>Music Player</h1>
     <button type="button" class="btn btn-info" data-bs-toggle="modal" data-bs-target="#exampleModal">
   My Playlist
   </button>
-  <h4>Upload Music</h4>
-  <form action="/index" method="get">
-      <label for="music_file">Select Music File to upload: </label>
-      <input type="file" name="music_file" id="music_file" accept=".mp3, .ogg, .wav"><br>
-      <button type="submit">Upload</button>
-  </form>
     <audio id="audio" controls autoplay></audio>
     <ul id="playlist">
         <li data-src="/your music src">Music name

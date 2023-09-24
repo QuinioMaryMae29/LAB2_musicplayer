@@ -64,7 +64,7 @@
         </div>
         <div class="modal-body">
           <br>
-              <a href="/playlist/">Your playlist</a>
+              <a href="/createPlaylist">Your playlist</a>
               <br>
         </div>
         <div class="modal-footer">
@@ -96,7 +96,7 @@
   My Playlist
   </button>
   <h4>Upload Music</h4>
-  <form action="/index" method="post">
+  <form action="/index" method="get">
       <label for="music_file">Select Music File to upload: </label>
       <input type="file" name="music_file" id="music_file" accept=".mp3, .ogg, .wav"><br>
       <button type="submit">Upload</button>

@@ -35,7 +35,7 @@ class MusicPlayerController extends BaseController
             ];
 
             $musicModel->insert($data);
-            return redirect()->to('index/success');
+            return redirect()->to('index');
 
             return view('index', ['validation' => $this->validator, 'uploadError' => $musicFile->getErrorString()]);
         }
@@ -43,7 +43,12 @@ class MusicPlayerController extends BaseController
 
     public function createPlaylist()
     {
+        $playlistModel = new PlaylistModel();
 
+        if ($this->request->getMethod() === 'post' && $this->validate(['name' => 'required'])) {
+            $playlistName = $this->request->getPost('name');
+            $playlistModel->insert(['name' => $playlistName]);
+    }
     }
 
     public function addToPlaylist()

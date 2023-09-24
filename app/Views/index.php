@@ -64,7 +64,7 @@
         </div>
         <div class="modal-body">
           <br>
-              <a href="/createPlaylist">Your playlist</a>
+              <a href="">Your playlist</a>
         </div>
         <div class="modal-footer">
           <a href="#" data-bs-dismiss="modal">Close</a>
@@ -73,16 +73,20 @@
       </div>
     </div>
   </div>
-  <form action="/index" method="get">
-    <input type="search" name="search" placeholder="search song">
-    <button type="submit" class="btn btn-info">Search</button>
+  <form action="/" method="get">
+    <input type="text" name="query" placeholder="search song">
+    <button type="submit" class="btn btn-primary">Search</button>
   </form>
-  <div id="search-results">
-  </div>
     <h1>Music Player</h1>
-    <button type="button" class="btn btn-info" data-bs-toggle="modal" data-bs-target="#exampleModal">
+    <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">
   My Playlist
   </button>
+  <h4>Upload Music</h4>
+  <form action="/upload" method="post">
+      <label for="music_file">Select Music File to upload: </label>
+      <input type="file" name="music_file" id="music_file" accept=".mp3, .ogg, .wav"><br>
+      <button type="submit">Upload</button>
+  </form>
     <audio id="audio" controls autoplay></audio>
     <ul id="playlist">
         <li data-src="/your music src">Music name

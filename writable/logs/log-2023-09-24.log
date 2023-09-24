@@ -194,3 +194,21 @@ in APPPATH\Views\index.php on line 70.
  8 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
  9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
 10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\laragon\\www\\MusicPlayer_app\\public\\index.php')
+CRITICAL - 2023-09-24 12:41:33 --> Call to undefined method App\Models\MusicModel::searchMusic
+in SYSTEMPATH\Model.php on line 873.
+ 1 APPPATH\Controllers\MusicPlayerController.php(40): CodeIgniter\Model->__call('searchMusic', [...])
+ 2 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\MusicPlayerController->search()
+ 3 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\MusicPlayerController))
+ 4 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\laragon\\www\\MusicPlayer_app\\public\\index.php')
+CRITICAL - 2023-09-24 13:00:20 --> Invalid file: "/upload.php"
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 39.
+ 1 SYSTEMPATH\View\View.php(214): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('/upload.php')
+ 2 SYSTEMPATH\Common.php(1188): CodeIgniter\View\View->render('/upload', [], true)
+ 3 APPPATH\Controllers\MusicPlayerController.php(22): view('/upload', [...])
+ 4 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\MusicPlayerController->upload()
+ 5 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\MusicPlayerController))
+ 6 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\laragon\\www\\MusicPlayer_app\\public\\index.php')

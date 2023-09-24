@@ -7,13 +7,13 @@ use CodeIgniter\Model;
 class MusicModel extends Model
 {
     protected $DBGroup          = 'default';
-    protected $table            = 'musics';
+    protected $table            = 'music';
     protected $primaryKey       = 'id';
     protected $useAutoIncrement = true;
     protected $returnType       = 'array';
     protected $useSoftDeletes   = false;
     protected $protectFields    = true;
-    protected $allowedFields    = [];
+    protected $allowedFields    = ['title','artist','album','genre'];
 
     // Dates
     protected $useTimestamps = false;

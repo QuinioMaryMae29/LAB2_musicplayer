@@ -83,9 +83,9 @@
   </button>
   <h4>Upload Music</h4>
   <form action="/upload" method="post">
-      <label for="music_file">Select Music File to upload: </label>
-      <input type="file" name="music_file" id="music_file" accept=".mp3, .ogg, .wav"><br>
-      <button type="submit">Upload</button>
+      <label for="music_file">Select Music File to upload:</label>
+          <input type="file" name="music_file" id="music_file" accept=".mp3, .ogg, .wav" required><br>
+          <button type="submit">Upload</button>
   </form>
     <audio id="audio" controls autoplay></audio>
     <ul id="playlist">

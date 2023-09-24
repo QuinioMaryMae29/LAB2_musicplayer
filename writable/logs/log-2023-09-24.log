@@ -212,3 +212,33 @@ in SYSTEMPATH\Exceptions\FrameworkException.php on line 39.
  6 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
  7 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
  8 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\laragon\\www\\MusicPlayer_app\\public\\index.php')
+CRITICAL - 2023-09-24 14:26:56 --> Class "App\Controllers\SongModel" not found
+in APPPATH\Controllers\MusicController.php on line 24.
+ 1 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\MusicController->upload()
+ 2 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\MusicController))
+ 3 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\laragon\\www\\MusicPlayer_app\\public\\index.php')
+CRITICAL - 2023-09-24 14:28:00 --> Call to undefined method App\Models\SongModel::insertSong
+in SYSTEMPATH\Model.php on line 873.
+ 1 APPPATH\Controllers\MusicController.php(30): CodeIgniter\Model->__call('insertSong', [...])
+ 2 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\MusicController->upload()
+ 3 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\MusicController))
+ 4 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\laragon\\www\\MusicPlayer_app\\public\\index.php')
+CRITICAL - 2023-09-24 14:28:50 --> Call to undefined method App\Models\SongModel::searchSongs
+in SYSTEMPATH\Model.php on line 873.
+ 1 APPPATH\Controllers\MusicController.php(42): CodeIgniter\Model->__call('searchSongs', [...])
+ 2 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\MusicController->search()
+ 3 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\MusicController))
+ 4 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\laragon\\www\\MusicPlayer_app\\public\\index.php')
+CRITICAL - 2023-09-24 15:24:21 --> Call to a member function isValid() on null
+in APPPATH\Controllers\MusicPlayerController.php on line 24.
+ 1 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\MusicPlayerController->upload()
+ 2 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\MusicPlayerController))
+ 3 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\laragon\\www\\MusicPlayer_app\\public\\index.php')

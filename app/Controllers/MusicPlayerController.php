@@ -3,8 +3,8 @@
 namespace App\Controllers;
 
 use App\Controllers\BaseController;
-//use App\Models\MusicModel;
-//use App\Models\PlaylistModel;
+use App\Models\SongModel;
+use App\Models\PlaylistModel;
 
 class MusicPlayerController extends BaseController
 {
@@ -25,12 +25,12 @@ class MusicPlayerController extends BaseController
 
     public function addToPlaylist()
     {
-
+        
     }
 
     public function removeFromPlaylist()
     {
-
+        
     }
 
     public function search()

@@ -10,4 +10,19 @@ class PlaylistController extends BaseController
     {
         //
     }
+
+    public function create()
+    {
+        
+    }
+
+    public function addTrack($playlistId, $trackId)
+    {
+        
+    }
+
+    public function removeTrack($playlistId, $trackId)
+    {
+        
+    }
 }

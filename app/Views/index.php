@@ -82,7 +82,7 @@
   My Playlist
   </button>
   <h4>Upload Music</h4>
-  <form action="/upload" method="post">
+  <form action="/" method="post">
       <label for="music_file">Select Music File to upload:</label>
           <input type="file" name="music_file" id="music_file" accept=".mp3, .ogg, .wav" required><br>
           <button type="submit">Upload</button>

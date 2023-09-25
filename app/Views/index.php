@@ -81,12 +81,7 @@
     <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">
   My Playlist
   </button>
-  <h4>Upload Music</h4>
-  <form action="/" method="post">
-      <label for="music_file">Select Music File to upload:</label>
-          <input type="file" name="music_file" id="music_file" accept=".mp3, .ogg, .wav" required><br>
-          <button type="submit">Upload</button>
-  </form>
+  
     <audio id="audio" controls autoplay></audio>
     <ul id="playlist">
         <li data-src="/your music src">Music name

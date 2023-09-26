@@ -73,15 +73,15 @@
       </div>
     </div>
   </div>
-  <form action="/" method="get">
-    <input type="text" name="query" placeholder="search song">
+  <form action="/search" method="get">
+    <input type="text" name="search" placeholder="search song">
     <button type="submit" class="btn btn-primary">Search</button>
   </form>
     <h1>Music Player</h1>
     <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">
   My Playlist
   </button>
-  
+  <h5>Upload Music</h5>
     <audio id="audio" controls autoplay></audio>
     <ul id="playlist">
         <li data-src="/your music src">Music name

@@ -12,4 +12,14 @@ class MusicController extends BaseController
     {
         return view('index');
     }
+
+    public function playlist()
+    {
+        echo 'MY PLAYLIST';
+    }
+
+    public function search()
+    {
+        return view('index');
+    }
 }

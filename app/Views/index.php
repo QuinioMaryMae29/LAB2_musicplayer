@@ -64,7 +64,7 @@
         </div>
         <div class="modal-body">
           <br>
-              <a href="">Your playlist</a>
+              <a href="/playlist">Your playlist</a>
         </div>
         <div class="modal-footer">
           <a href="#" data-bs-dismiss="modal">Close</a>

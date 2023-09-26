@@ -3,8 +3,8 @@
 namespace App\Controllers;
 
 use App\Controllers\BaseController;
-use App\Models\MusicModel;
-use App\Models\PlaylistModel;
+use App\Model\MusicModel;
+use App\Model\PlaylistModel;
 
 class MusicController extends BaseController
 {
@@ -30,7 +30,27 @@ class MusicController extends BaseController
 
     public function upload()
     {
+        $musicModel = new MusicModel();
 
+        $title = $this->request->getVar('title');
+        $artist = $this->request->getVar('artist');
+        $musicFile = $this->request->getFile('music_file');
+
+        if($musicFile->isValid() && !$musicFile->hasMoved()){
+            $uploadDir = WRITEPATH . 'uploads/';
+            $fileName = $musicFile->getRandomName();
+            $musicFile->move($uploadDir, $fileName);
+
+            $data = [
+                'title' => $title,
+                'artist' => $artist,
+                'file_path' => 'uploads/' . $fileName,
+            ];
+
+            $musicModel->insert($data);
+
+            return redirect()->to('/index');
+        }
     }
 
     public function addToPlaylist()

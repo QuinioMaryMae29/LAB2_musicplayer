@@ -81,7 +81,7 @@
     <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">
   My Playlist
   </button>
-  <h5>Upload Music</h5>
+  <h6>Upload Music</h6>
     <audio id="audio" controls autoplay></audio>
     <ul id="playlist">
         <li data-src="/your music src">Music name

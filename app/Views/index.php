@@ -82,6 +82,11 @@
   My Playlist
   </button>
   <h5>Upload Music</h5>
+  <form action="/index" method="get">
+     <label for="music_file">Choose a music file: </label>
+     <input type="file" name="music_file"><br>
+     <button type="submit">Upload</button>
+  </form>
     <audio id="audio" controls autoplay></audio>
     <ul id="playlist">
         <li data-src="/your music src">Music name

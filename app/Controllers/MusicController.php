@@ -15,11 +15,31 @@ class MusicController extends BaseController
 
     public function playlist()
     {
-        echo 'MY PLAYLIST';
+        echo 'my playlist';
+    }
+
+    public function createPlaylist()
+    {
+
     }
 
     public function search()
     {
         return view('index');
+    }
+
+    public function upload()
+    {
+
+    }
+
+    public function addToPlaylist()
+    {
+        
+    }
+
+    public function removeFromPlaylist()
+    {
+
     }
 }

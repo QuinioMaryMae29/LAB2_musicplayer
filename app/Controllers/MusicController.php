@@ -12,14 +12,4 @@ class MusicController extends BaseController
     {
         return view('index');
     }
-
-    public function upload()
-    {
-        
-    }
-
-    public function search()
-    {
-        
-    }
 }
